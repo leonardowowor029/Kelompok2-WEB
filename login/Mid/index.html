@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelompok 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<style>
+    * {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    }
+    .box {
+    padding: 8px 0;
+    background-color: #656565 ;
+    color:#32be8f;
+    text-align: center;
+    }
+    header h1{
+        float: left; 
+        font-size: 16px;
+        padding: 14px 0;
+        color: #32be8f;
+    }
+    header ul {
+        float: right;
+        font-size: 10px;
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    .container {
+        width: 98%;
+        margin: auto;
+    }
+    header ul li {
+        display: inline-block;
+    }
+    header ul li a {
+        padding: 15px 5px;
+        display: inline-block;
+    }
+    header ul li a:hover{
+        background-color:#656565;
+        color: #32be8f;
+    }
+    .active{
+        background-color:#656565;
+        color: #32be8f;
+    }
+    .banner{
+        text-align: center;
+        padding: 25%;
+        font-size: 10px;
+        color:#32be8f;
+        align-items: center;
+        background-color:aliceblue;
+    }
+    .banner p{
+        color: black;
+        font-style: italic;
+    }
+    section h3{
+        text-align: center;
+        padding: 20px 0;
+        font-size: 9px;
+    }
+    .about p{
+        text-align: center;
+        font-size: 8px;
+    }
+
+    .mobilemenu{
+        float: right;
+        display: none;
+        padding: 15px;
+    }
+    .mobilemenu:hover{
+        cursor: pointer;
+    }
+    
+    #check {
+        display: none;
+    }
+    
+    .sidebar{
+        position: fixed;
+        top: 0;
+        left: -300px;
+        bottom: 0;
+        width: 300px;
+        background-color: rgba(101, 101, 101, .7);
+        transition: .3s;
+    }
+    .sidebar ul li a{
+        color: #fff;
+        font-size: 12px;
+    }
+    .sidebar ul li a:hover{
+        color:#32be8f;
+        padding: 10px;
+    }
+    .sidebar ul li{
+        padding: 24px;
+        transition: .3s;
+    }
+    #check:checked ~ .sidebar {
+        left: 0;
+    }
+
+    @media (max-width: 768px){
+        .mobilemenu{
+            display: block;
+        }
+        header ul{
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <div class="box">
+        <b>WELCOME AND HAPPY SHOPPING
+    </div>
+
+    <input type="checkbox" id="check">
+    <div class="sidebar">
+        <ul>
+            <li class="active"><a href="index.html">HOME</a></li>
+            <li><a href="product.html">PRODUCT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+
+    
+    <header>
+        <div class="container">
+            <h1><a href="index.html">PHONE SHOP</a></h1>
+            <ul>
+                <li class="active"><a href="index.html">HOME</a></li>
+                <li><a href="product.html">PRODUCT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+
+            <label for="check" class="mobilemenu"><i class="fas fa-bars fa-2x"></i></label>
+
+        </div>
+    </header>
+
+    <section class="banner">
+        <h2>WELCOME TO <span class="efek">PHONE SHOP</h2>
+        <p>Click "PRODUCT" in the bar to shopping</p>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h3>ABOUT</h3>
+            <p>Pemrograman Web, Kelas F, Kelompok 2</p>
+            <p>Leonardo Wowor 19021106029</p>
+            <p>Tesalonika Kondoy 19021106</p>
+            <p>Talita Manampiring 19021106</p>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
